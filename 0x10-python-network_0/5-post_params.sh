@@ -1,3 +1,3 @@
 #!/bin/bash
-# script that takes url and sends POST req to display the response
-curl -s "$1" -X POST -d "email=hr@holbertonschool.com&subject=I will always be here for PLD"
+# Sends a POST request to the passed URL, and displays the body of the response
+curl -s -X POST --data "email=test@gmail.com&subject=I will always be here for PLD" $*
